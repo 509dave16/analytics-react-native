@@ -1,0 +1,1 @@
+{"version":3,"sources":["reset.ts"],"names":["firebaseAnalytics","resetAnalyticsData"],"mappings":"AAAA,OAAOA,iBAAP,MAA8B,kCAA9B;AAEA,gBAAe,YAAY;AACzB,QAAMA,iBAAiB,GAAGC,kBAApB,EAAN;AACD,CAFD","sourcesContent":["import firebaseAnalytics from '@react-native-firebase/analytics';\n\nexport default async () => {\n  await firebaseAnalytics().resetAnalyticsData();\n};\n"]}

@@ -1,0 +1,1 @@
+{"version":3,"sources":["flush.ts"],"names":["ReactAppboy","requestImmediateDataFlush"],"mappings":";;;;;;;AAAA;;;;eAEe,MAAM;AACnBA,gCAAYC,yBAAZ;AACD,C","sourcesContent":["import ReactAppboy from 'react-native-appboy-sdk';\n\nexport default () => {\n  ReactAppboy.requestImmediateDataFlush();\n};\n"]}

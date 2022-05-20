@@ -1,0 +1,32 @@
+/// <reference types="jest" />
+export declare const changeUser: jest.Mock<any, any>;
+export declare const requestImmediateDataFlush: jest.Mock<any, any>;
+export declare const setDateOfBirth: jest.Mock<any, any>;
+export declare const setEmail: jest.Mock<any, any>;
+export declare const setFirstName: jest.Mock<any, any>;
+export declare const setLastName: jest.Mock<any, any>;
+export declare const setGender: jest.Mock<any, any>;
+export declare const setPhoneNumber: jest.Mock<any, any>;
+export declare const setHomeCity: jest.Mock<any, any>;
+export declare const setCountry: jest.Mock<any, any>;
+export declare const setCustomUserAttribute: jest.Mock<any, any>;
+export declare const logCustomEvent: jest.Mock<any, any>;
+export declare const logPurchase: jest.Mock<any, any>;
+export declare const setAttributionData: jest.Mock<any, any>;
+declare const _default: {
+    changeUser: jest.Mock<any, any>;
+    requestImmediateDataFlush: jest.Mock<any, any>;
+    setDateOfBirth: jest.Mock<any, any>;
+    setEmail: jest.Mock<any, any>;
+    setFirstName: jest.Mock<any, any>;
+    setLastName: jest.Mock<any, any>;
+    setGender: jest.Mock<any, any>;
+    setPhoneNumber: jest.Mock<any, any>;
+    setHomeCity: jest.Mock<any, any>;
+    setCountry: jest.Mock<any, any>;
+    setCustomUserAttribute: jest.Mock<any, any>;
+    logCustomEvent: jest.Mock<any, any>;
+    logPurchase: jest.Mock<any, any>;
+    setAttributionData: jest.Mock<any, any>;
+};
+export default _default;

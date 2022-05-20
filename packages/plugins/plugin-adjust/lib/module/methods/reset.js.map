@@ -1,0 +1,1 @@
+{"version":3,"sources":["reset.ts"],"names":["Adjust","resetSessionPartnerParameters"],"mappings":"AAAA,SAASA,MAAT,QAAuB,qBAAvB;AAEA,gBAAe,MAAM;AACnBA,EAAAA,MAAM,CAACC,6BAAP;AACD,CAFD","sourcesContent":["import { Adjust } from 'react-native-adjust';\n\nexport default () => {\n  Adjust.resetSessionPartnerParameters();\n};\n"]}
