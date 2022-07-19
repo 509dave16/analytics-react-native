@@ -102,11 +102,12 @@ export class QueueFlushingPlugin extends UtilityPlugin {
       const eventsToRemove = Array.isArray(events) ? events : [events];
 
       if (eventsToRemove.length === 0 || state.events.length === 0) {
+        console.log('ARN - events to remove', eventsToRemove.length);
         return state;
       }
 
-      const setToRemove = new Set(eventsToRemove);
-      const filteredEvents = state.events.filter(e => !setToRemove.has(e));
+      const setToRemove = new Set(eventsToRemove.map(event => event.messageId).filter(messageId => messageId));
+      const filteredEvents = state.events.filter(e => !setToRemove.has(e.messageId));
       return {
         events: filteredEvents
       };
