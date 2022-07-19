@@ -78,8 +78,10 @@ export class QueueFlushingPlugin extends UtilityPlugin {
    * Removes one or multiple events from the queue
    * @param events events to remove
    */
-  dequeue(events: SegmentEvent | SegmentEvent[]) {
-    this.queueStore?.dispatch((state) => {
+  dequeue(
+    events: SegmentEvent | SegmentEvent[]
+  ): Promise<{ events: SegmentEvent[] }> | undefined {
+    return this.queueStore?.dispatch((state) => {
       const eventsToRemove = Array.isArray(events) ? events : [events];
 
       if (eventsToRemove.length === 0 || state.events.length === 0) {

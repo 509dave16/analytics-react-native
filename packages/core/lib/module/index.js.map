@@ -1,0 +1,1 @@
+{"version":3,"sources":["index.ts"],"names":["SegmentClient"],"mappings":"AAAA,cAAc,UAAd;AACA,cAAc,UAAd;AACA,cAAc,SAAd;AACA,cAAc,gBAAd;AACA,SAASA,aAAT,QAA8B,aAA9B","sourcesContent":["export * from './client';\nexport * from './plugin';\nexport * from './types';\nexport * from './mapTransform';\nexport { SegmentClient } from './analytics';\n"]}

@@ -1,0 +1,1 @@
+{"version":3,"sources":["info.ts"],"names":["libraryInfo","name","version"],"mappings":";;;;;;AACO,MAAMA,WAAW,GAAG;AACzBC,EAAAA,IAAI,EAAE,iCADmB;AAEzBC,EAAAA,OAAO,EAAE;AAFgB,CAApB","sourcesContent":["\nexport const libraryInfo = {\n  name: '@segment/analytics-react-native',\n  version: '2.4.0',\n}\n"]}

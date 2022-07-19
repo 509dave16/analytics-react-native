@@ -41,7 +41,7 @@ export class SegmentDestination extends DestinationPlugin {
           console.warn(e);
           numFailedEvents += batch.length;
         } finally {
-          this.queuePlugin.dequeue(sentEvents);
+          await this.queuePlugin.dequeue(sentEvents);
         }
       })
     );
